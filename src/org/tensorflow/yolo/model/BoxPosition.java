@@ -69,6 +69,15 @@ public class BoxPosition {
         return bottom;
     }
 
+    public BoxPosition adjust(float x, float y) {
+        left += x;
+        right += x;
+        top += y;
+        bottom += y;
+
+        return this;
+    }
+
     @Override
     public String toString() {
         return "BoxPosition{" +
